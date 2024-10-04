@@ -1,0 +1,23 @@
+.itg-list-group {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+    &-horizontal {
+        flex-direction: row;
+
+        .list-group-item {
+            &+.list-group-item {
+                padding-left: 0.25rem;
+
+                &::before {
+                    float: left;
+                    padding-right: 0.25rem;
+                    content: "|";
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,78 @@
+:root {
+    --font-family-satoshi: "Satoshi", Helvetica, Arial, sans-serif;
+
+    --icon-size: 1.5rem;
+
+    /* Font Size */
+    --font-size-96: 6rem;
+    --font-size-76: 4.75rem;
+    --font-size-64: 4rem;
+    --font-size-48: 3rem;
+    --font-size-40: 2.5rem;
+    --font-size-36: 2.25rem;
+    --font-size-32: 2rem;
+    --font-size-28: 1.75rem;
+    --font-size-24: 1.5rem;
+    --font-size-20: 1.25rem;
+    --font-size-18: 1.125rem;
+    --font-size-16: 1rem;
+    --font-size-14: 0.875rem;
+    --font-size-12: 0.75rem;
+    --font-size-9: 0.563rem;
+
+    /* Color White */
+    --color-white: #FFFFFF;
+
+    /* Color Gray */
+    --color-gray-100: #0C0E17;
+    --color-gray-90: #161616;
+    --color-gray-80: #26282D;
+    --color-gray-70: #363A41;
+    --color-gray-60: #9CA5BA;
+    --color-gray-50: #ADB9D2;
+    --color-gray-40: #CBD2E4;
+    --color-gray-30: #E5E9F1;
+    --color-gray-20: #F2F4F9;
+    --color-gray-10: #F9FAFC;
+
+    /* Color Blue */
+    --color-blue-100: #00164F;
+    --color-blue-90: #0C3687;
+    --color-blue-80: #172A6B;
+    --color-blue-70: #0C3687;
+    --color-blue-60: #0041A3;
+    --color-blue-50: #0166FF;
+    --color-blue-40: #5785E1;
+    --color-blue-30: #8AAAEA;
+    --color-blue-20: #E1E9FF;
+    --color-blue-10: #F0F4FF;
+
+    /* Color Green */
+    --color-green-100: #002418;
+    --color-green-90: #00472F;
+    --color-green-80: #00593B;
+    --color-green-70: #006B46;
+    --color-green-60: #008E5D;
+    --color-green-50: #80C7AE;
+    --color-green-40: #C0E3D7;
+    --color-green-30: #E0F1EB;
+    --color-green-20: #E8F5F0;
+    --color-green-10: #F0F8F5;
+
+    /* Color Red */
+    --color-red-100: #410F0E;
+    --color-red-90: #6A1F1E;
+    --color-red-80: #9F2E2D;
+    --color-red-70: #B93634;
+    --color-red-60: #D33D3B;
+    --color-red-50: #DE6E6C;
+    --color-red-40: #E99E9D;
+    --color-red-30: #F4CFCE;
+    --color-red-20: #FAE7E7;
+    --color-red-10: #FDF3F3;
+
+    /* Color Gray with transparency */
+    --color-gray-80-alpha-30: rgba(38, 40, 45, 0.3);
+    --color-gray-80-alpha-15: rgba(38, 40, 45, 0.15);
+    --color-text-muted: rgba(54, 58, 65, 0.70);
+}

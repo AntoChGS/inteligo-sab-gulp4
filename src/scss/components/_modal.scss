@@ -1,0 +1,111 @@
+body.itg-modal-open {
+    overflow: hidden;
+}
+
+.itg-modal {
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    visibility: hidden;
+    display: none;
+
+    &.show {
+        visibility: visible;
+
+        .modal-dialog {
+            transform: none;
+        }
+    }
+
+    &-dialog {
+        position: relative;
+        width: auto;
+        margin: 1.75rem auto;
+        transform: translate(0, -50px);
+        transition: transform 0.3s ease;
+
+        @media (min-width: 576px) {
+            max-width: 500px;
+        }
+
+        &-centered {
+            display: flex;
+            align-items: center;
+            min-height: calc(100% - 1.75rem* 2);
+        }
+    }
+
+    &-xl {
+        @media (min-width: 1312px) {
+            max-width: 1098px;
+        }
+    }
+
+    &-lg,
+    &-xl {
+        @media (min-width: 1056px) {
+            max-width: 1058px;
+        }
+    }
+
+    &-sm {
+        @media (min-width: 576px) {
+            max-width: 300px;
+        }
+    }
+
+    &-content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        background-color: var(--color-white);
+        border: 1px solid var(--color-gray-40);
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    &-btn-close {
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 20px;
+        padding: .25em .25em;
+        margin-left: auto;
+    }
+
+    &-header,
+    &-footer {
+        padding: 1rem 1.5rem;
+    }
+
+    &-title {
+        margin-bottom: 0;
+    }
+
+    &-header {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        padding: 1rem 1.5rem 0.5rem;
+    }
+
+    &-body {
+        flex: 1;
+        padding: 1rem 1.5rem;
+        overflow-y: auto;
+    }
+
+    &-footer {
+        display: flex;
+        flex-shrink: 0;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0.5rem 1.5rem 1.5rem;
+    }
+}

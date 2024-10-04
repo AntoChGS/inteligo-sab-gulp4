@@ -1,0 +1,130 @@
+.itg-accordion {
+    .accordion-item {
+        position: relative;
+
+        @media (min-width: 1056px) {
+            margin-bottom: 1.5rem;
+        }
+
+        .accordion-header {
+            background-color: var(--color-white);
+            margin: 0;
+            padding: 0;
+            border: none;
+
+            &.close {
+                border-bottom: 1px solid var(--color-gray-40);
+
+                .accordion-label-right {
+                    display: block;
+                    opacity: 1;
+                }
+            }
+
+            .accordion-label-right {
+                display: none;
+                opacity: 0;
+                transition: all ease .2s;
+            }
+
+            .accordion-toggle {
+                position: relative;
+                padding: 0.5rem 0rem 0.5rem 1.25rem;
+                cursor: pointer;
+                user-select: none;
+                display: block;
+                width: 100%;
+                text-align: left;
+                font-size: 1rem;
+                font-weight: 500;
+                background-color: transparent;
+                color: var(--color-gray-70);
+                border: none;
+                transition: background-color 0.3s ease;
+
+                @media (max-width: 1055.98px) {
+                    //font-size: 1.25rem;
+                    padding: 1.5rem 1rem 1.5rem 2.25rem;
+                }
+
+                &.collapsed {
+                    background-color: var(--color-white);
+                }
+
+                &:not(.collapsed) {
+                    background-color: var(--color-white);
+                }
+
+                &:active {
+                    background-color: var(--color-gray-30);
+                }
+
+                &:hover {
+                    background-color: var(--color-white);
+                }
+
+                &:disabled {
+                    background-color: transparent;
+                    color: var(--color-gray-50);
+                }
+
+                &:focus-visible {
+                    outline: 0;
+                    box-shadow: 0px 0px 0px 2px var(--color-blue-50);
+                }
+
+                &::after {
+                    position: absolute;
+                    left: 0px;
+                    top: 6px;
+                    width: 6px;
+                    height: 6px;
+                    margin-left: 2px;
+                    margin-top: 8px;
+                    transform: rotate(45deg);
+                    border-radius: 1px;
+                    content: "";
+                    transition: all .1s;
+
+                    border-right: 2px solid var(--color-gray-70);
+                    border-bottom: 2px solid var(--color-gray-70);
+
+                    @media (max-width: 1055.98px) {
+                        width: 8px;
+                        height: 8px;
+                        top: 20px;
+                        left: 16px;
+                    }
+                }
+
+                &:not(.collapsed)::after {
+                    top: 8px;
+                    transform: rotate(225deg);
+
+                    @media (max-width: 1055.98px) {
+                        top: 25px;
+                    }
+                }
+            }
+        }
+
+        .accordion-body {
+            background-color: var(--color-white);
+            overflow: hidden;
+            opacity: 0;
+            height: 0;
+            display: none;
+            transition: opacity 0.3s ease, height 0.3s ease;
+
+            &.collapse {
+                display: block;
+            }
+
+            &.show {
+                opacity: 1;
+                height: auto;
+                padding: 0.75rem 0;
+            }
+        }
+    }
+}

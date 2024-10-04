@@ -1,0 +1,25 @@
+.itg-alert {
+    position: relative;
+    padding: 1.25rem 1rem;
+    margin-bottom: 1rem;
+    color: var(--color-gray-70);
+    background-color: transparent;
+    border: 1px solid transparent;
+
+    &-icon-start, &-icon-center {
+        display: flex;
+    }
+
+    &-icon-start {
+        align-items: flex-start;
+    }
+
+    &-icon-center {
+        align-items: center;
+    }
+
+    &-light {
+        background-color: #F9FAFC;
+        border-color: var(--color-gray-40);
+    }
+}

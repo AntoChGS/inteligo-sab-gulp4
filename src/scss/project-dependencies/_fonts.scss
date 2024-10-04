@@ -1,0 +1,44 @@
+// Fonts
+@mixin font-face($font-family, $font-style, $font-weight, $font1, $font-local, $font2, $font3, $font4) {
+    font-family: $font-family;
+    font-style: $font-style;
+    font-weight: $font-weight;
+    src: url($font1);
+    src: local($font-local),
+        url($font2) format('truetype'),
+        url($font3) format('woff'),
+        url($font4) format('woff2');
+    font-display: swap;
+}
+
+@font-face {
+    @include font-face('Satoshi', normal, 400, 'Satoshi Regular',
+            '../fonts/satoshi/Satoshi-Regular.ttf?s16i6w',
+            '../fonts/satoshi/Satoshi-Regular.ttf?s16i6w#iefix',
+            '../fonts/satoshi/Satoshi-Regular.woff?s16i6w',
+            '../fonts/satoshi/Satoshi-Regular.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Satoshi', italic, 400, 'Satoshi Italic',
+            '../fonts/satoshi/Satoshi-Italic.ttf?s16i6w',
+            '../fonts/satoshi/Satoshi-Italic.ttf?s16i6w#iefix',
+            '../fonts/satoshi/Satoshi-Italic.woff?s16i6w',
+            '../fonts/satoshi/Satoshi-Italic.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Satoshi', normal, 500, 'Satoshi Bold',
+            '../fonts/satoshi/Satoshi-Medium.ttf?s16i6w',
+            '../fonts/satoshi/Satoshi-Medium.ttf?s16i6w#iefix',
+            '../fonts/satoshi/Satoshi-Medium.woff?s16i6w',
+            '../fonts/satoshi/Satoshi-Medium.woff2?s16i6w');
+}
+
+@font-face {
+    @include font-face('Satoshi', normal, 700, 'Satoshi Bold',
+            '../fonts/satoshi/Satoshi-Bold.ttf?s16i6w',
+            '../fonts/satoshi/Satoshi-Bold.ttf?s16i6w#iefix',
+            '../fonts/satoshi/Satoshi-Bold.woff?s16i6w',
+            '../fonts/satoshi/Satoshi-Bold.woff2?s16i6w');
+}

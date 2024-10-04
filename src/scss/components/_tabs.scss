@@ -1,0 +1,183 @@
+.itg-tabs {
+    .tab-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+        margin-bottom: 1.5rem;
+        list-style: none;
+
+        .navigation-link {
+            font-size: 1rem;
+            font-weight: 500;
+            line-height: 1.5;
+            padding: 0.75rem 1rem;
+            border-radius: 0;
+            cursor: pointer;
+            border: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-gray-70);
+            background-color: transparent;
+            transition: all 0.3s ease;
+
+            &:focus-visible {
+                outline: 0;
+                border-color: var(--color-white);
+                box-shadow: 0px 0px 0px 2px var(--color-blue-50);
+            }
+
+            &:disabled,
+            &.disabled {
+                color: var(--color-gray-50) !important;
+                cursor: not-allowed;
+                pointer-events: all !important;
+            }
+        }
+    }
+
+    &-pills {
+        .navigation-tab-item {
+            &:first-child {
+                .navigation-link {
+                    border-top-left-radius: 0.125rem;
+                    border-bottom-left-radius: 0.125rem;
+                    border-right: 2px solid transparent;
+                }
+            }
+
+            &:last-child {
+                .navigation-link {
+                    border-top-right-radius: 0.125rem;
+                    border-bottom-right-radius: 0.125rem;
+                    border-left: 2px solid transparent;
+                }
+            }
+        }
+
+        .tab-buttons {
+            @media (max-width: 1055.98px) {
+                justify-content: space-around;
+            }
+
+            .navigation-tab-item {
+                @media (max-width: 1055.98px) {
+                    flex: 1;
+                }
+            }
+
+            .navigation-link {
+                font-size: 0.875rem;
+                padding: 0.219rem 0.75rem;
+                background-color: var(--color-gray-20);
+                border: 2px solid rgba(38, 40, 45, 0.15);
+
+                @media (max-width: 1055.98px) {
+                    font-size: 1rem;
+                    padding: 0.375rem 0.5rem;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                &:active {
+                    background-color: var(--color-gray-40);
+                    border-color: rgba(38, 40, 45, 0.15);
+                    color: var(--color-blue-60);
+                }
+
+                &:hover {
+                    background-color: var(--color-gray-30);
+                    border-color: rgba(38, 40, 45, 0.15);
+                }
+
+                &:disabled {
+                    background-color: var(--color-blue-20);
+                    border-color: var(--color-blue-20);
+                    color: var(--color-gray-50);
+                }
+
+                &:focus-visible {
+                    outline: 0;
+                    border-color: var(--color-white);
+                    box-shadow: 0px 0px 0px 2px var(--color-blue-50);
+                }
+
+                &.active {
+                    color: var(--color-blue-60);
+                    border-color: var(--color-blue-50) !important;
+                }
+            }
+        }
+    }
+
+    &-underline {
+        .tab-buttons {
+            border-bottom: 1px solid var(--color-gray-40);
+
+            .navigation-link {
+                position: relative;
+                color: var(--color-text-muted);
+
+                &::after {
+                    content: "";
+                    position: absolute;
+                    bottom: 0px;
+                    height: 0px;
+                    background-color: var(--color-gray-50);
+                    border-radius: 10px;
+                    left: 0;
+                    right: 0;
+                    transition: all ease .3s;
+                }
+
+                &:hover {
+                    color: var(--color-gray-70);
+
+                    &::after {
+                        height: 1px;
+                        bottom: -1px;
+                        background-color: var(--color-gray-50);
+                    }
+                }
+
+                &.active {
+                    color: var(--color-gray-70);
+
+                    &::after {
+                        height: 3px;
+                        bottom: -1px;
+                        background-color: var(--color-blue-50);
+                    }
+                }
+            }
+        }
+    }
+
+
+    .tab-content {
+        .tab-pane {
+            display: none;
+            padding: 0px;
+
+            &.active {
+                display: block;
+            }
+        }
+    }
+}
+
+.itg-tab-btn-external {
+    color: var(--color-gray-70);
+    text-decoration: none;
+
+    &.active {
+        color: var(--color-blue-60);
+        text-decoration: underline;
+    }
+
+    &:hover {
+        background-color: var(--color-gray-20);
+        border-radius: 3px;
+        text-decoration: none;
+    }
+}

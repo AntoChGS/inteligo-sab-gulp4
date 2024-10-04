@@ -1,0 +1,144 @@
+.itg-layout {
+    &-portlet {
+        &-desktop {
+            display: none;
+
+            @media (min-width: 1056px) {
+                display: block;
+            }
+        }
+
+        &-mobile {
+            display: block;
+
+            @media (min-width: 1056px) {
+                display: none;
+            }
+        }
+    }
+
+    &-sticky {
+        &-container {
+            display: grid;
+
+            @media (min-width: 1312px) {
+
+                grid-template-columns: 356px 1fr;
+                gap: 0;
+                padding: 0;
+            }
+
+            @media (max-width: 1055.98px) {
+                grid-template-columns: 1fr;
+            }
+
+            .layout-sidebar {
+                background-color: var(--color-white);
+
+                @media (min-width: 1056px) {
+                    width: 356px;
+                    border-right: 1px solid var(--color-gray-30);
+                    box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.00),
+                        0px 6px 12px -3px rgba(156, 165, 186, 0.04),
+                        0px 6px 18px 0px rgba(156, 165, 186, 0.12);
+                    transition: all 0.3s ease;
+                }
+
+                @media (min-width: 1312px) {
+                    position: sticky;
+                    top: 130px;
+                    height: calc(100vh - 130px);
+                    z-index: 24;
+                    width: 356px;
+                }
+
+                @media only screen and (min-width: 1056px) and (max-width: 1311.98px) {
+                    position: fixed;
+                    top: 81px;
+                    height: calc(100vh - 81px);
+                    transform: translateX(-100%);
+                    z-index: 24;
+                    visibility: hidden;
+                }
+
+                &:hover .scroll-bar {
+                    opacity: 0;
+                    -webkit-transition: all .5s;
+                }
+
+                &.open {
+                    transform: translateX(0);
+                    visibility: visible;
+
+                    .sidebar-close {
+                        display: block;
+                    }
+                }
+
+                .sidebar-close {
+                    display: none;
+                    position: absolute;
+                    top: 16px;
+                    right: -36px;
+                    font-size: 1rem;
+                    margin: 0 !important;
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                }
+
+                &__box {
+                    width: 100%;
+
+                    @media (min-width: 1056px) {
+                        height: 100%;
+                        overflow-y: scroll;
+                        padding: 1.5rem 1.5rem;
+                    }
+
+                    &::-webkit-scrollbar {
+                        width: .4em;
+                    }
+
+                    &::-webkit-scrollbar,
+                    &::-webkit-scrollbar-thumb {
+                        overflow: visible;
+                        border-radius: 4px;
+                    }
+
+                    &::-webkit-scrollbar-thumb {
+                        background: rgba(0, 0, 0, .2);
+                    }
+                }
+
+                .scroll-bar {
+                    position: absolute;
+                    background: #fff;
+                    height: 100%;
+                    top: 0;
+                    right: 0;
+                    width: 0.375rem;
+                    -webkit-transition: all .5s;
+                    opacity: 1;
+
+                    @media (max-width: 1055.98px) {
+                        display: none;
+                    }
+                }
+            }
+
+            .layout-main-content {
+                display: grid;
+                grid-template-rows: auto;
+                grid-template-columns: 1fr;
+
+                @media (max-width: 1055.98px) {
+                    order: -1;
+                }
+            }
+
+            .layout-content {
+                min-width: 1px;
+            }
+        }
+    }
+}

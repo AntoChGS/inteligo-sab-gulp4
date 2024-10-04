@@ -1,0 +1,28 @@
+.itg-bar {
+    display: block;
+    height: 24px;
+    background-color: var(--color-gray-30);
+    width: 100%;
+    min-width: 100px;
+    border-radius: 0;
+    overflow: hidden;
+
+    @media (min-width: 1056px) {
+        height: 16px;
+    }
+}
+
+.itg-fill {
+    height: 100%;
+    background-color: var(--color-blue-60);
+    text-align: center;
+    color: var(--color-white);
+    line-height: 16px;
+    width: 0;
+    transition: width 2s ease-out;
+}
+
+.itg-percentage {
+    display: inline-block;
+    text-align: right;
+}

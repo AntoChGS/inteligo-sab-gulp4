@@ -1,0 +1,401 @@
+.itg-layout-sticky-container 
+    aside.layout-sidebar
+        .itg-button.itg-button-primary.itg-button-xs.sidebar-close.itg-toggle-btn-sidebar &times;
+        .scroll-bar
+        .layout-sidebar__box
+            .itg-layout-portlet-desktop
+                h2.itg-typography-heading-20.itg-mrg-b-4.itg-text-color-blue-60 Patrimonio total
+                .itg-dpy-block.itg-mrg-b-6
+                    p.itg-typography-caption-12.itg-mrg-b-1 Total cartera valorizada
+                    .itg-box-s-1.itg-box-center
+                        p.itg-typography-subheading-24.itg-mrg-b-0 #[span.itg-typography-caption-12 USD] #[span 42,562.57]
+                        button.itg-button.itg-button-invisible.itg-button-i-only.itg-mrg-s-1
+                            span.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'renew')
+                .itg-tabs.itg-tabs-pills#tabs1
+                    ul.tab-buttons
+                        li.navigation-tab-item
+                            button.tab-button.navigation-link.active(data-tab="tabType1") Por tipo de activo
+                        li.navigation-tab-item
+                            button.tab-button.navigation-link(data-tab="tabType2") Por moneda
+                    .tab-content
+                        .tab-pane.active#tabType1
+                            .itg-dpy-block.itg-mrg-b-3
+                                .itg-box-s-1.itg-box-center
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-16.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'portfolio')
+                                            | Por Tipo de Activo
+                                    .itg-tooltips.itg-tooltips--bottom-right
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Este es el texto del tooltip
+
+                            table.itg-table.itg-mrg-b-4
+                                thead
+                                    tr 
+                                        th Descripción
+                                        th.itg-text-align-right Dólares (USD)
+                                        th.itg-text-align-right Soles (PEN)
+                                tbody
+                                    tr 
+                                        td.itg-text-ws-nowrap 
+                                            a.itg-tab-btn-external.active(href="#", data-target="tab1", data-tabs-id="tabs2") Renta Variable
+                                            .info__information.itg-tooltips.itg-tooltips--bottom-left
+                                                span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                                .tooltip-content Totaliza el monto invertido como Reportante.
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                    tr 
+                                        td.itg-text-ws-nowrap 
+                                            a.itg-tab-btn-external(href="#", data-target="tab2", data-tabs-id="tabs2") Renta Fija
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                    tr 
+                                        td.itg-text-ws-nowrap Efectivo
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                tfoot 
+                                    tr
+                                        td.itg-text-color-blue-60 Total
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+
+                            .itg-dpy-block.itg-mrg-b-3
+                                .itg-box-s-1.itg-box-center
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-16.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'chart-bar-target')
+                                            | Participación %
+                                    .itg-tooltips.itg-tooltips--bottom-right
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Este es el texto del tooltip
+
+                            .itg-alert.itg-alert-light.itg-alert-icon-start.itg-mrg-b-0 
+                                span.icon.svg--inline-icon.itg-mrg-e-1: svg: use(xlink:href=iconPath+'information-filled')
+                                div.itg-typography-footnote-14 No hay datos suficientes para mostrar la participación de tus inversiones.
+                        .tab-pane#tabType2
+                            .itg-dpy-block.itg-mrg-b-3
+                                .itg-box-s-1.itg-box-center
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-16.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'portfolio')
+                                            | Por moneda
+                                    .itg-tooltips.itg-tooltips--bottom-right
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Este es el texto del tooltip
+
+                            table.itg-table.itg-mrg-b-4
+                                thead
+                                    tr 
+                                        th Descripción
+                                        th.itg-text-align-right Dólares (USD)
+                                        th.itg-text-align-right Soles (PEN)
+                                tbody
+                                    tr 
+                                        td.itg-text-ws-nowrap Dólares USD
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                    tr 
+                                        td.itg-text-ws-nowrap Soles PEN
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                tfoot 
+                                    tr
+                                        td.itg-text-color-blue-60 Total
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+
+                            .itg-dpy-block.itg-mrg-b-3
+                                .itg-box-s-1.itg-box-center
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-16.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'chart-bar-target')
+                                            | Participación %
+                                    .itg-tooltips.itg-tooltips--bottom-right
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Este es el texto del tooltip
+
+                            .itg-alert.itg-alert-light.itg-alert-icon-start.itg-mrg-b-0 
+                                span.icon.svg--inline-icon.itg-mrg-e-1: svg: use(xlink:href=iconPath+'information-filled')
+                                div.itg-typography-footnote-14 No hay datos suficientes para mostrar la participación de tus inversiones.
+
+            .itg-layout-portlet-mobile.itg-shadow-sm
+                .itg-dpy-block.pdg-4
+                    h2.itg-typography-heading-24.itg-mrg-b-0.itg-text-color-blue-60 Patrimonio total
+                    .itg-box-s-1.itg-box-center.itg-mrg-b-0
+                        p.itg-typography-heading-40.itg-mrg-b-0 #[span.itg-typography-body-16 USD] #[span.itg-text-color-blue-60 42,562.57]
+                        button.itg-button.itg-button-invisible.itg-button-i-only.itg-mrg-s-1
+                            span.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'renew')
+                    p.itg-typography-heading-18.itg-mrg-b-0 Total cartera valorizada
+                
+                .itg-tabs.itg-tabs-pills#tabsMob1
+                    ul.tab-buttons.pdg-4.itg-mrg-b-0
+                        li.navigation-tab-item
+                            button.tab-button.navigation-link.active(data-tab="tabMobType1") Por tipo de activo
+                        li.navigation-tab-item
+                            button.tab-button.navigation-link(data-tab="tabMobType2") Por moneda
+                    
+                    .tab-content
+                        .tab-pane.active#tabMobType1
+                            .itg-dpy-block.itg-mrg-b-2
+                                .itg-box-s-1.itg-box-center.pdg-4
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-24.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'portfolio')
+                                            | Por Tipo de Activo
+                                    .itg-tooltips.itg-tooltips--bottom-right.itg-typography-heading-24
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Totaliza el monto invertido como Reportante.
+                                
+                            table.itg-table.itg-mrg-b-4
+                                thead
+                                    tr 
+                                        th Descripción
+                                        th.itg-text-align-right Dólares (USD)
+                                        th.itg-text-align-right Soles (PEN)
+                                tbody
+                                    tr 
+                                        td.itg-text-ws-nowrap 
+                                            a.link-color-gray-70(href="posicion-desagregada.html") Renta Variable
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                    tr 
+                                        td.itg-text-ws-nowrap 
+                                            a.link-color-gray-70(href="posicion-desagregada.html") Renta Fija
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                    tr 
+                                        td.itg-text-ws-nowrap Efectivo
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                tfoot 
+                                    tr
+                                        td.itg-text-color-blue-60 Total
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+
+                            .itg-dpy-block
+                                .itg-box-s-1.itg-box-center.pdg-4
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-24.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'chart-bar-target')
+                                            | Participación %
+                                    .itg-tooltips.itg-tooltips--bottom-right.itg-typography-heading-24
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Totaliza el monto invertido como Reportante.
+
+                            table.itg-table.itg-table-pdg-sm
+                                tr
+                                    td.itg-text-ws-nowrap Dólares USD
+                                    td 
+                                        .itg-bar#bar1
+                                            .itg-fill
+                                    td 
+                                        span.itg-percentage#percentage1 0%
+                                tr
+                                    td.itg-text-ws-nowrap Soles PEN
+                                    td 
+                                        .itg-bar#bar2
+                                            .itg-fill
+                                    td 
+                                        span.itg-percentage#percentage2 0%
+
+                            .itg-dpy-block.pdg-4.pdg-t-5.pdg-b-5
+                                a.itg-button.itg-button-secondary.itg-button-md(href="posicion-desagregada.html") Ver tu posición desagregada
+
+                        .tab-pane#tabMobType2
+                            .itg-dpy-block.itg-mrg-b-3
+                                .itg-box-s-1.itg-box-center.pdg-4
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-24.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'portfolio')
+                                            | Por Moneda
+                                    .itg-tooltips.itg-tooltips--bottom-right.itg-typography-heading-24
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Totaliza el monto invertido como Reportante.
+                            
+                            table.itg-table.itg-mrg-b-4
+                                thead
+                                    tr 
+                                        th Descripción
+                                        th.itg-text-align-right Dólares (USD)
+                                        th.itg-text-align-right Soles (PEN)
+                                tbody
+                                    tr 
+                                        td.itg-text-ws-nowrap Dólares USD
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                    tr 
+                                        td.itg-text-ws-nowrap Soles PEN
+                                        td.itg-text-align-right 0.00
+                                        td.itg-text-align-right 0.00
+                                tfoot 
+                                    tr
+                                        td.itg-text-color-blue-60 Total
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+                                        td.itg-text-align-right.itg-text-color-blue-60 0.00
+                            
+                            .itg-dpy-block.itg-mrg-b-3
+                                .itg-box-s-1.itg-box-center.pdg-4
+                                    .box__info
+                                        h2.itg-box-s-1.itg-box-center.itg-typography-heading-24.itg-mrg-b-0.itg-text-color-gray-70 
+                                            span.icon.svg--inline-icon.itg-mrg-e-2: svg: use(xlink:href=iconPath+'chart-bar-target')
+                                            | Participación %
+                                    .itg-tooltips.itg-tooltips--bottom-right.itg-typography-heading-24
+                                        span.tooltip-trigger.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'information-filled')
+                                        .tooltip-content Totaliza el monto invertido como Reportante.
+
+                            table.itg-table.itg-table-pdg-sm
+                                tr
+                                    td.itg-text-ws-nowrap Dólares USD
+                                    td 
+                                        .itg-bar#bar1
+                                            .itg-fill
+                                    td 
+                                        span.itg-percentage#percentage1 0%
+                                tr
+                                    td.itg-text-ws-nowrap Soles PEN
+                                    td 
+                                        .itg-bar#bar2
+                                            .itg-fill
+                                    td 
+                                        span.itg-percentage#percentage2 0%
+
+                            .itg-dpy-block.pdg-4.pdg-t-5.pdg-b-5
+                                a.itg-button.itg-button-secondary.itg-button-md(href="posicion-desagregada.html") Ver tu posición desagregada
+                            
+    .layout-main-content
+        .layout-content
+            .itg-layout-portlet-desktop
+                .itg-box-s-2.itg-bg-color-gray-10
+                    .itg-box-s-1.itg-box-end
+                        .box__info
+                            p.itg-typography-caption-12.itg-mrg-b-1 Efectivo disponible
+                            .itg-box-s-1.itg-box-center
+                                p.info__subheading.itg-typography-subheading-24.itg-mrg-b-0 #[span.itg-typography-caption-12 USD] #[span 0.00] #[span.itg-typography-caption-12 + PEN] #[span 0.00]
+                                button.itg-button.itg-button-invisible.itg-button-i-only.itg-mrg-s-1
+                                    span.icon.svg--inline-icon: svg: use(xlink:href=iconPath+'renew')
+                        a(href="#").itg-button.itg-button-primary.itg-button-xs Operar en bolsa
+                        a(href="#").itg-button.itg-button-secondary.itg-button-xs.itg-mrg-s-2 Depositar
+                .layout-grid-d
+                    .itg-box-s-3
+                        .itg-box-s-1.itg-box-center.itg-mrg-b-2
+                            .box__info
+                                h2.itg-typography-heading-20.itg-mrg-b-0.itg-text-color-blue-60 Posición desagregada
+                            .itg-dropdown
+                                button.itg-button.itg-button-secondary.itg-button-xs.itg-dropdown-toggle Estado de cuenta
+                                    | 
+                                    span.toggle-icon-dropdown.icon.svg--inline-icon.itg-mrg-s-1: svg: use(xlink:href=iconPath+'chevron-down')
+                                ul.itg-dropdown-menu.itg-dropdown-align--end
+                                    li.itg-dropdown-item: a.itg-dropdown-link(href="#") Julio 2024
+                                    li.itg-dropdown-item: a.itg-dropdown-link(href="#") Junio 2024
+                                    li.itg-dropdown-item: a.itg-dropdown-link(href="#") Mayo 2024
+                                    li.itg-dropdown-item: a.itg-dropdown-link.itg-dropdown-link--icon.itg-text-color-blue-60(href="#") Ver todos tus EECC
+                                        span.icon.svg--inline-icon.itg-mrg-x-left: svg: use(xlink:href=iconPath+'arrow-up-right')
+                            
+                        .itg-tabs.itg-tabs-underline#tabs2
+                            ul.tab-buttons
+                                li.navigation-tab-item
+                                    button.tab-button.navigation-link.active(data-tab="tab1") Renta Variable
+                                li.navigation-tab-item
+                                    button.tab-button.navigation-link(data-tab="tab2") Renta Fija
+                            .tab-content
+                                .tab-pane.active#tab1
+                                    .itg-accordion
+                                        .accordion-item
+                                            .accordion-header.itg-box-s-1.itg-box-center
+                                                h3.box__info.itg-mrg-b-0  
+                                                    //button.accordion-toggle.collapsed(data-toggle="collapse" data-target="#collapseOne") Acciones y ETFs en el mercado extranjero
+                                                    button.accordion-toggle(data-toggle="collapse" data-target="#collapseOne") Acciones y ETFs en el mercado extranjero
+                                                p.accordion-label-right.itg-typography-label-12.itg-mrg-b-0 Monto valorizado USD #[span.itg-typography-label-16.itg-text-color-blue-60 12,753.11]
+                                            .accordion-body.collapse.show#collapseOne
+                                                .itg-alert.itg-alert-light.itg-alert-icon-center.itg-mrg-b-0 
+                                                    span.icon.svg--inline-icon.itg-mrg-e-1: svg: use(xlink:href=iconPath+'information-filled')
+                                                    div Aquí podrás visualizar tus inversiones en el mercado extranjero
+                                                        | 
+                                                        a.itg-button.itg-button-invisible.itg-button-xs(href="#") Operar en bolsa 
+                                        .accordion-item
+                                            .accordion-header.itg-box-s-1.itg-box-center
+                                                h3.box__info.itg-mrg-b-0  
+                                                    //button.accordion-toggle.collapsed(data-toggle="collapse" data-target="#collapseTwo") Acciones y ETFs en la Bolsa de Lima 
+                                                    button.accordion-toggle(data-toggle="collapse" data-target="#collapseTwo") Acciones y ETFs en la Bolsa de Lima
+                                                //p.accordion-label-right.itg-typography-label-12.itg-mrg-b-0 Monto valorizado USD #[span.itg-typography-label-16.itg-text-color-blue-60 3,963.01]
+                                            .accordion-body.collapse.show#collapseTwo
+                                                .itg-alert.itg-alert-light.itg-alert-icon-center.itg-mrg-b-0 
+                                                    span.icon.svg--inline-icon.itg-mrg-e-1: svg: use(xlink:href=iconPath+'information-filled')
+                                                    div Recuerda que también puedes invertir en la Bolsa de Lima.
+                                                        | 
+                                                        a.itg-button.itg-button-invisible.itg-button-xs(href="#") Operar en bolsa 
+                                .tab-pane#tab2
+                                    .itg-accordion
+                                        .accordion-item
+                                            .accordion-header.itg-box-s-1.itg-box-center
+                                                h3.box__info.itg-mrg-b-0 
+                                                    //button.accordion-toggle.collapsed(data-toggle="collapse" data-target="#collapseTwo") Acciones y ETFs en la Bolsa de Lima 
+                                                    button.accordion-toggle(data-toggle="collapse" data-target="#collapse2One") Bonos
+                                                p.accordion-label-right.itg-typography-label-12.itg-mrg-b-0 Monto valorizado USD #[span.itg-typography-label-16.itg-text-color-blue-60 3,963.01]
+                                            .accordion-body.collapse.show#collapse2One
+                                                .itg-alert.itg-alert-light.itg-alert-icon-center.itg-mrg-b-0 
+                                                    span.icon.svg--inline-icon.itg-mrg-e-1: svg: use(xlink:href=iconPath+'information-filled')
+                                                    div Aquí podrás visualizar tus bonos
+
+            .itg-layout-portlet-mobile.itg-shadow-sm.itg-mrg-b-2
+                .itg-box-s-3.itg-box-end.itg-bg-color-white
+                    .box__info
+                        p.itg-typography-body-16.itg-mrg-b-1 Efectivo disponible
+                        .itg-box-s-1.itg-box-center
+                            p.info__subheading.itg-typography-heading-18.itg-mrg-b-0 #[span.itg-typography-body-16 USD] #[span.itg-text-color-blue-60 0.00] #[span.itg-typography-body-16 + PEN] #[span.itg-text-color-blue-60 0.00]
+                .itg-box-footer 
+                    a.itg-button.itg-button-invisible.itg-button-full.itg-button-md(href="posicion-desagregada.html") Ver tu posición desagregada
+                        span.icon.svg--inline-icon.itg-mrg-s-2: svg: use(xlink:href=iconPath+'chevron-right')
+
+
+.itg-modal#modal1
+    .itg-modal-dialog.itg-modal-dialog-centered.itg-modal-xl
+        .itg-modal-content
+            .itg-modal-header
+                //h2.itg-modal-title.itg-typography-heading-20 What is modal?
+                button.itg-modal-btn-close.itg-button.itg-button-invisible.itg-close-modal &times;
+            .itg-modal-body
+                p.itg-typography-heading-18.itg-mrg-b-2.itg-text-color-blue-60 American Airlines Group
+                .itg-box-s-1.itg-box-end.itg-mrg-b-4
+                    .box__info
+                        ul.itg-list-group.itg-list-group-horizontal.itg-typography-caption-12
+                            li.list-group-item NYSE
+                            li.list-group-item Dólares Americanos USD
+                            li.list-group-item Última transac. 12/05/2026
+                    p.itg-typography-caption-12.itg-mrg-x-left.itg-mrg-b-0 Monto valorizado USD #[span.itg-typography-label-16.itg-text-color-blue-60 29,973.00]
+                .itg-table-responsive
+                    table.itg-table.itg-table-border-round 
+                        thead
+                            tr 
+                                th.itg-text-align-right Cantidad #[br] Contable
+                                th.itg-text-align-right Cantidad #[br] Disponible
+                                th.itg-text-align-right Precio Prom. #[br] Compra
+                                th.itg-text-align-right Monto #[br] Invertido
+                                th.itg-text-align-right Precio de #[br] Mercado
+                                th.itg-text-align-right Valor de #[br] Mercado
+                                th.itg-text-align-right V. de Mercado #[br] (USD)
+                                th.itg-text-align-right Ganancia/ #[br] Perdida
+                                th.itg-text-align-right Rentabilidad #[br] %
+                                th.itg-text-align-right Dividendos
+                                th.itg-text-align-right % RV #[br] en USD
+                        tbody
+                            tr 
+                                td.itg-text-align-right 1,000
+                                td.itg-text-align-right 1,000
+                                td.itg-text-align-right 213.31
+                                td.itg-text-align-right 200,00.00
+                                td.itg-text-align-right 213.31
+                                td.itg-text-align-right 231.13
+                                td.itg-text-align-right 
+                                    span.itg-text-color-blue-60 213.10
+                                td.itg-text-align-right
+                                    span.itg-text-color-green-70 13.31
+                                td.itg-text-align-right 13.310
+                                td.itg-text-align-right 213.31
+                                td.itg-text-align-right 213.31
+                            
+            //.itg-modal-footer
+                //button.itg-button.itg-button-danger.itg-close-modal-btn Cerrar
+                button.itg-button.itg-button-danger.itg-button-md Vender
+                button.itg-button.itg-button-primary.itg-button-md.itg-mrg-s-2 Comprar

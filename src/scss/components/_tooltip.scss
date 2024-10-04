@@ -1,0 +1,90 @@
+.itg-tooltips {
+    position: relative;
+    display: inline-block;
+    white-space: normal;
+
+    .tooltip-trigger {
+        cursor: pointer;
+        color: var(--color-gray-60);
+
+        &:active,
+        &.show {
+            color: var(--color-gray-60);
+            text-decoration: none;
+        }
+
+        &:hover {
+            color: var(--color-blue-60);
+            text-decoration: none;
+        }
+
+        &:disabled,
+        &.disabled {
+            color: var(--color-gray-40);
+        }
+    }
+
+    .tooltip-content {
+        visibility: hidden;
+        width: 167px;
+        background-color: rgba(54, 58, 65, 0.90);
+        color: var(--color-white);
+        font-size: 12px;
+        text-align: center;
+        border-radius: 4px;
+        padding: 0.5rem 0.75rem;
+        position: absolute;
+        z-index: 1;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+
+        @media (max-width: 1055.98px) {
+            font-size: 14px;
+            line-height: 1.15;
+            width: 256px;
+            padding: 1rem 1rem;
+        }
+    }
+
+    // Posiciones del tooltip
+    &.itg-tooltips--top .tooltip-content {
+        bottom: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.itg-tooltips--bottom .tooltip-content {
+        top: calc(100% + 10px);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    &.itg-tooltips--left .tooltip-content {
+        top: 50%;
+        right: calc(100% + 10px);
+        transform: translateY(-50%);
+    }
+
+    &.itg-tooltips--right .tooltip-content {
+        top: 50%;
+        left: calc(100% + 10px);
+        transform: translateY(-50%);
+    }
+
+    &.itg-tooltips--bottom-left .tooltip-content {
+        top: calc(100% + 2px);
+        left: 0;
+        transform: translateX(0);
+    }
+
+    &.itg-tooltips--bottom-right .tooltip-content {
+        top: calc(100% + 2px);
+        right: 0;
+        transform: translateX(0);
+    }
+
+    &:hover .tooltip-content {
+        visibility: visible;
+        opacity: 1;
+    }
+}

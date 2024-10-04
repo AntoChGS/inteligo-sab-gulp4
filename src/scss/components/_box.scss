@@ -1,0 +1,44 @@
+.itg-box {
+    &-start {
+        align-items: flex-start;
+    }
+
+    &-center {
+        align-items: center;
+    }
+
+    &-end {
+        align-items: flex-end;
+    }
+
+    &-s {
+        &-1 {
+            display: flex;
+
+            .box__info {
+                flex: 1;
+            }
+        }
+
+        &-2 {
+            padding: 1.5rem 2rem;
+            border-bottom: 1px solid var(--color-gray-40);
+
+            @media (max-width: 1055.98px) {
+                padding: 1.5rem 1rem;
+            }
+        }
+
+        &-3 {
+            padding: 1.5rem 1.5rem;
+
+            @media (max-width: 1055.98px) {
+                padding: 1.5rem 1rem;
+            }
+        }
+    }
+    &-footer {
+        background-color: var(--color-white);
+        border-top: 1px solid var(--color-gray-40);
+    }
+}
